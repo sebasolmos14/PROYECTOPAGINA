@@ -28,11 +28,11 @@ header{
 }
 
 header .nav_header{
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1fr 2fr 2fr;
     grid-template-areas:
       "logo search logo1 "
-      "nav  nav    nav "; 
+      "nav  nav    nav ";  */
     /* margin-left: 226px;
     margin-right: 226px; */
     padding: 0 5px;
