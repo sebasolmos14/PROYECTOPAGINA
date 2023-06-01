@@ -17,8 +17,6 @@ li{list-style: none;}
 
 .container{
     display: flex; 
-    max-width: 100%;
-    min-width: 100%;
     margin: auto;
     flex-direction: row;
     justify-content: space-around;
@@ -26,7 +24,6 @@ li{list-style: none;}
 
 header{
     background-color: #fff159;
-    max-width: 100%;
     min-height: 105px;
 }
 
@@ -230,12 +227,11 @@ ul.slider li:target{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas:
       "pago tranfer efec otros ";
-    padding: 20px 20px;
+    padding: 20px 0;
     text-align: center;
     gap: 10px;
     background-color: white;
     border-radius: 5px ; 
-    max-width: 1400px;
 }
 
 #pagos img{
@@ -275,9 +271,10 @@ ul.slider li:target{
 
 .titulo{
     display: flex;
-    max-width: 1400px;
-    margin: auto;
     flex-direction: row;
+    justify-content: start;
+    margin-left: 226px;
+    margin-right: 226px;
 }
 
 
@@ -606,13 +603,8 @@ ul.slider li:target{
     margin: 0 86px;
 }
 
-
-@media (min-width:700ox) {
-    header .nav_header{
-        flex-direction: row;
+/* @media screen and (max-width: 950px) {
+    .container_img {
+        grid-template-columns: 1fr;
     }
-    nav{
-        padding: 10px;
-    }
-}
-
+} */
