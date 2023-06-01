@@ -33,11 +33,28 @@ header .nav_header{
     grid-template-areas:
       "logo search logo1 "
       "nav  nav    nav "; 
-    margin-left: 226px;
-    margin-right: 226px;
+    /* margin-left: 226px;
+    margin-right: 226px; */
+    padding: 0 5px;
     padding-top: 5px;
     gap: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
 
+header .superior {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+header .inferior {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .listas{
@@ -51,7 +68,7 @@ header .nav_header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-right: 20px;
+    /* padding-right: 20px; */
 }
 
 .lista2{
@@ -65,7 +82,7 @@ header .nav_header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-right: 20px;
+    /* padding-right: 20px; */
 }
 
 .menu_horizontal2{
@@ -77,7 +94,7 @@ header .nav_header{
 	display: block;
 	padding: 0 20px;
 	text-decoration: none;
-    font-size: 11px;
+
 }
 .menu_horizontal2 > li:hover{
 	background-color: none;
@@ -272,9 +289,7 @@ ul.slider li:target{
 .titulo{
     display: flex;
     flex-direction: row;
-    justify-content: start;
-    margin-left: 226px;
-    margin-right: 226px;
+    justify-content: end;
 }
 
 
@@ -285,18 +300,26 @@ ul.slider li:target{
     padding: 30px;  
 }
 
+.container_ti{
+    display: flex;
+    justify-content:start ;
+}
 .container_img {
     
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
-      "ima1 ima2 ima3 ima4 ima5 ";
+      "ima1 ima2 ima3 ima4 ima5 "; */
     background-repeat: no-repeat;
-    margin-left: 226px;
-    margin-right: 226px;
+    /* margin-left: 226px;
+    margin-right: 226px; */
     padding: 8px 10px 12px 10px; 
     text-align: center;
     gap: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
     
 }
 
@@ -304,14 +327,12 @@ ul.slider li:target{
     border-top: 1px solid rgb(113, 109, 109);
 }
 
-
 .img-container1{
     grid-area: ima1;
     background-color: white;
     cursor: pointer;
     box-shadow: 2px 2px 10px #b09595;
 }
-
 .img-container2{
     grid-area: ima2;
     background-color: white;
@@ -335,6 +356,7 @@ ul.slider li:target{
     background-color: white;
     cursor: pointer;
     box-shadow: 2px 2px 10px #b09595;
+    
 }
 
 .img-container1 p span{
@@ -602,9 +624,3 @@ ul.slider li:target{
     padding: 16px 0;
     margin: 0 86px;
 }
-
-/* @media screen and (max-width: 950px) {
-    .container_img {
-        grid-template-columns: 1fr;
-    }
-} */
