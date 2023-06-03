@@ -20,6 +20,7 @@ li{list-style: none;}
     margin: auto;
     flex-direction: row;
     justify-content: space-around;
+    /* padding: 40px 0; */
 }
 
 header{
@@ -48,6 +49,7 @@ header .superior {
     display: flex;
     justify-content: center;
     gap: 60px;
+    flex-wrap: wrap;
 }
 
 header .inferior {
@@ -103,6 +105,7 @@ header .inferior {
 	list-style: none;
 	display: flex;
 	justify-content: space-around;
+    flex-wrap: wrap;
 }
 .menu-horizontal > li > a{
 	display: block;
@@ -238,17 +241,25 @@ ul.slider li:target{
 
 /* SECCION DE PAGOS */
 
-
+menu{
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 40px 0;
+}
 #pagos{
-    display: grid;
+    display: flex;
+    /* display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas:
-      "pago tranfer efec otros ";
-    padding: 20px 0;
+      "pago tranfer efec otros "; */
+    padding: 20px 10px;
     text-align: center;
     gap: 10px;
     background-color: white;
     border-radius: 5px ; 
+    flex-wrap: wrap;
+    justify-content: center;
+
 }
 
 #pagos img{
@@ -397,6 +408,7 @@ ul.slider li:target{
     margin: auto;
     justify-content: space-around;
     background: white;
+    
 }
 
 .beneficios_til {
@@ -413,6 +425,7 @@ ul.slider li:target{
     padding: 16px 24px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    
     
 }
 
@@ -439,6 +452,10 @@ ul.slider li:target{
     display: flex;
     text-align: start ;
     
+}
+
+#ben_h{
+    padding: 0 5px;
 }
 #prueba p{
     display: flex;
@@ -623,4 +640,9 @@ ul.slider li:target{
     max-width: 1180px;
     padding: 16px 0;
     margin: 0 86px;
+}
+
+
+@media screen {
+    
 }
